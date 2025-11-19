@@ -1,0 +1,26 @@
+.text__field {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.label__field {
+    color: #E7473C;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.input__field {
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #E7473C;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Tira o contorno em volta dos inputs */
+.input__field:focus {
+    outline: 0;
+}

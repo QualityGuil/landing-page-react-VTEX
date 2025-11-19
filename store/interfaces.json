@@ -1,0 +1,17 @@
+{
+  "my-list": {
+    "component": "MyList"
+  },
+  "product-list-example": {
+    "component": "ProductListExample"
+  },
+  "test-component-guilherme": {
+    "component": "TestComponent"
+  },
+  "catalog-page": {
+    "component": "CatalogPage"
+  },
+  "form-container": {
+    "component": "FormContainer"
+  }
+}
