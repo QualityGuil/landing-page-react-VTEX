@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TextField from "../TextField";
-import styles from './index.module.css'
+import styles from './index.module.css';
+import { validarDocumento } from "../../utils/documentValidator";
 
 function FormContainer() {
     const [name, setName] = useState('');
@@ -80,13 +81,19 @@ function FormContainer() {
         age: 30,
         email: "testeJuniorDaSilvaJuniorJuniorPereira@exemplo.com",
         // document: "50233523073",
-        document: "123",
+        document: "30199455007",
         city: "Rio de Janeiro",
         state: "RJ"
     };
 
     async function registerUser() {
         try {
+
+            // Valida CPF e CNPJ
+            if (!validarDocumento(userData.document)) {
+                return alert('❌ Documento inválido!');
+            }
+            
             const response = await fetch(`${API_PATH}`, {
                 method: 'POST',
                 headers: {
