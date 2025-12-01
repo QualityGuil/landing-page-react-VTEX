@@ -10,32 +10,25 @@ export function validarDocumento(doc: string): boolean {
             let somatorio = 0;
 
             for (let i = 0; i < docIncompleto.length; i++) {
-
                 let digitoAtual = docIncompleto.charAt(i);
-
                 let constate = docIncompleto.length + 1 - i;
-
-                // console.log(constate);
-
                 somatorio += parseInt(digitoAtual) * constate;
             }
 
             const resto = somatorio % 11;
 
             return resto < 2 ? "0" : (11 - resto).toString();
-
         }
 
         const primeiroDigitoVerificador: string = proximoDigitoVerificador(docLimpo.substring(0, 9));
         const segundoDigitoVerificador: string = proximoDigitoVerificador(docLimpo.substring(0, 9) + primeiroDigitoVerificador);
-
         const docCorreto = docLimpo.substring(0, 9) + primeiroDigitoVerificador + segundoDigitoVerificador
 
         if (docLimpo != docCorreto) {
             console.log(`documento correto: ${docCorreto} \ndocumento inserido: ${docLimpo}`)
             return false
         }
-
+        
         return true;
     }
 
