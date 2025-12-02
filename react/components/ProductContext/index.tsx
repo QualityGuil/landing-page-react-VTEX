@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import { useProduct, useProductDispatch } from "vtex.product-context";
+import type { ProductContextState } from 'vtex.product-context/react/ProductContextProvider'
 
 const ProductContext = () => {
-    const productContext = useProduct();
+    // const productContext = useProduct();
+    const { product } =useProduct() as ProductContextState 
     const dispatch = useProductDispatch();
 
     useEffect(() => {
@@ -17,10 +19,10 @@ const ProductContext = () => {
         }
     }, []);
 
-    console.log('productContext🚀: ', productContext);
+    console.log('productContext🚀: ', product);
     // console.log('product🚀: ', product);
 
-    return <h1>{productContext?.product?.productName}</h1>
+    return <h1>{product?.productName}</h1>
 
     // Não funciona importando diretamente o objeto product
     // const { product } = useProduct();

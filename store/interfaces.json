@@ -19,5 +19,8 @@
   },
   "teste-order-context": {
     "component": "OrderContext"
+  },
+  "teste-order-items": {
+    "component": "OrderItems"
   }
 }

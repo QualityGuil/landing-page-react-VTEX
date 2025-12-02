@@ -14,6 +14,7 @@ const OrderContext = () => {
             name: "Guilherme França Fernandes Example"
         }
 
+        // Setta em alguns console.log da aplicação e substitui o item todo, somente deixando o nome
         setOrderForm({
             items: myItem
         })
