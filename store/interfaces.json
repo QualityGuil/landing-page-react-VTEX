@@ -16,5 +16,8 @@
   },
   "teste-produto-context": {
     "component": "ProductContext"
+  },
+  "teste-order-context": {
+    "component": "OrderContext"
   }
 }

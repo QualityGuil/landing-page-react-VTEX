@@ -19,10 +19,11 @@
     "@types/react": "^16.9.31",
     "@vtex/test-tools": "^3.4.3",
     "@vtex/tsconfig": "^0.6.0",
-    "acctglobal.landing-page": "https://guilhermeflandingpage--acctglobal.myvtex.com/_v/private/typings/linked/v1/acctglobal.landing-page@0.0.1+build1764679884/public/@types/acctglobal.landing-page",
+    "acctglobal.landing-page": "https://guilhermeflandingpage--acctglobal.myvtex.com/_v/private/typings/linked/v1/acctglobal.landing-page@0.0.1+build1764683276/public/@types/acctglobal.landing-page",
     "typescript": "3.9.7",
     "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.1/public/@types/vtex.css-handles",
     "vtex.device-detector": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.6/public/@types/vtex.device-detector",
+    "vtex.order-manager": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager",
     "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context",
     "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.1/public/@types/vtex.render-runtime"
   }

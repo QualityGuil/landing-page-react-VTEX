@@ -3,7 +3,6 @@ import { useProduct, useProductDispatch } from "vtex.product-context";
 
 const ProductContext = () => {
     const productContext = useProduct();
-
     const dispatch = useProductDispatch();
 
     useEffect(() => {
@@ -19,6 +18,7 @@ const ProductContext = () => {
     }, []);
 
     console.log('productContext🚀: ', productContext);
+    // console.log('product🚀: ', product);
 
     return <h1>{productContext?.product?.productName}</h1>
 
