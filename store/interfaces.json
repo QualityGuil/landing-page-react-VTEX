@@ -13,5 +13,8 @@
   },
   "form-container": {
     "component": "FormContainer"
+  },
+  "teste-produto-context": {
+    "component": "ProductContext"
   }
 }
